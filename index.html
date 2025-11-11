@@ -92,15 +92,23 @@
     }
 
     header {
-      background-color: var(--header-bg);
-      text-align: center;
-      padding: 0.75rem 0;
+      header {
+      width: 100%; /* make the header span the full page width */
+      background: linear-gradient(90deg, #79245c, #a8006d, #c991b6); /* your dark pink gradient */
+      text-align: center; /* horizontal centering of text */
+      padding: 0.75rem 0; /* vertical spacing */
       font-size: 1.3rem;
       font-weight: 600;
+      color: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      display: flex;           /* use flex for perfect vertical centering */
+      justify-content: center; /* horizontal centering */
+      align-items: center;     /* vertical centering */
+      letter-spacing: 1px;
       position: relative;
       z-index: 10;
-      color: white;
+    }
+
     }
 
     .content {
