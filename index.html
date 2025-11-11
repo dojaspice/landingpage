@@ -58,7 +58,11 @@
       height: 100%;
       overflow-x: hidden;
       color: var(--text-color);
-      background: linear-gradient(135deg, #c991b6, #633152);
+      background: linear-gradient(
+        135deg, 
+        rgba(201, 145, 182, 0.6),   /* top-left, 60% opacity */
+        rgba(99, 49, 82, 0.6)       /* bottom-right, 60% opacity */
+      );
       position: relative;
     }
 
@@ -84,7 +88,7 @@
       left: 0;
       width: 100%;
       height: 120%;
-      background-color: var(--overlay);
+      background-color: rgba(0,0,0,0.2); /* lighter overlay */
       z-index: -1;
     }
 
