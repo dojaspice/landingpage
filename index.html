@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -10,6 +10,7 @@
     })(window,document,'script','dataLayer','GTM-MQ9S6TT9');
   </script>
   <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doja Spice | Model | All Links</title>
@@ -17,17 +18,8 @@
   <meta name="keywords" content="Doja Spice, doja spice ai, ai model, artificial influencer, ai art, fanvue">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.dojaspice.com/">
-  <meta property="og:title" content="Doja Spice | Model | All Links">
-  <meta property="og:description" content="Find all my links here to my exclusive content! Subscribe today!">
-  <!--<meta property="og:image" content="https://www.dojaspice.com/preview.jpg">-->
-  <meta property="og:url" content="https://www.dojaspice.com/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Doja Spice | Model | All Links">
-  <meta name="twitter:description" content="Find all my links here to my exclusive content! Subscribe today!">
-  <!--<meta name="twitter:image" content="https://www.dojaspice.com/preview.jpg">-->
-  <link rel="stylesheet" href="styles.css" /> <!-- added as guess -->
-  
+  <link rel="stylesheet" href="styles.css" />
+
   <style>
     :root {
       --accent: #a8006d;
@@ -60,45 +52,46 @@
       color: var(--text-color);
       background: linear-gradient(
         135deg, 
-        rgba(201, 145, 182, 0.6),   /* top-left, 60% opacity */
-        rgba(99, 49, 82, 0.6)       /* bottom-right, 60% opacity */
+        rgba(201, 145, 182, 0.6),
+        rgba(99, 49, 82, 0.6)
       );
       position: relative;
     }
 
-    /* Parallax background image */
+    /* Static background image */
     body::before {
       content: "";
-      position: fixed;       /* stays in place */
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;          /* exactly viewport height */
+      height: 100%;
       background: url('background.jpg') no-repeat center center;
-      background-size: cover; /* cover entire viewport without distortion */
+      background-size: cover;
       z-index: -2;
     }
 
-    /* Ghosted overlay */
+    /* Semi-transparent overlay */
     body::after {
       content: "";
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 120%;
-      background-color: rgba(0,0,0,0.2); /* lighter overlay */
+      height: 100%;
+      background-color: var(--overlay);
       z-index: -1;
     }
 
+    /* Header */
     header {
-      width: 100%; /* full page width */
-      background: var(--header-gradient); /* use your gradient variable */
-      display: flex;           /* use flex for perfect vertical centering */
-      justify-content: center; /* horizontal centering */
-      align-items: center;     /* vertical centering */
-      text-align: center;      /* fallback horizontal centering */
-      padding: 0.75rem 0;      /* vertical spacing */
+      width: 100%;
+      background: var(--header-gradient);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.75rem 0;
       font-size: 1.3rem;
       font-weight: 600;
       color: white;
@@ -119,9 +112,9 @@
       text-align: center;
     }
 
-    h1 {
+    h1.content-title {
       font-size: 2rem;
-      margin: 0; /* remove default h1 margin */
+      margin-bottom: 1.5rem;
     }
 
     p {
@@ -157,36 +150,23 @@
       position: relative;
       z-index: 5;
     }
-    
   </style>
 </head>
+
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ9S6TT9"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <h1>Doja Spice's World!</h1>
- <div class="content">
-    <h1>Experience a new reality</h1>
+
+  <header>Doja Spice's World!</header>
+
+  <div class="content">
+    <h1 class="content-title">Experience a new reality</h1>
     <p>Find all my links below</p>
     <button onclick="window.location.href='https://linktr.ee/doja.spice'">Explore More</button>
   </div>
 
   <footer>© 2025 Doja Spice</footer>
-
-  <!-- Floating hearts animation 
-  <script>
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (6 + Math.random() * 4) + 's';
-      heart.style.opacity = 0.4 + Math.random() * 0.4;
-      heart.style.transform = `scale(${0.5 + Math.random()})`;
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 10000);
-    }
-    setInterval(createHeart, 800);
-  </script>-->
 </body>
 </html>
