@@ -138,21 +138,81 @@
       color: #fff;
     }
 
-    button {
-      background-color: var(--accent);
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 999px;
-      color: white;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
+        /* --- NEW LINK SECTION COMPONENT --- */
+
+    .link-section {
+      width: 100%;
+      max-width: 500px;
+      margin: 24px auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    button:hover {
-      background-color: var(--accent-hover);
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(168, 0, 109, 0.5);
+    .link-banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .link-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0)
+      );
+              mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0)
+      );
+    }
+
+    .link-content {
+      text-align: center;
+    }
+
+    .link-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .link-blurb {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 14px 20px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(168, 0, 109, 0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .link-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(168, 0, 109, 0.55);
+    }
+
+    .link-button:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 10px rgba(168, 0, 109, 0.40);
     }
 
     footer {
@@ -177,7 +237,26 @@
   <div class="content">
     <h1 class="content-title">Experience a new reality</h1>
     <p>Find all my links below</p>
-    <button onclick="window.location.href='https://linktr.ee/doja.spice'">Explore More</button>
+
+    <!-- ✨ NEW LINK BLOCK REPLACING OLD BUTTON ✨ -->
+    <div class="link-section">
+      <div class="link-banner">
+        <img src="skyblue_couch" alt="Banner">
+      </div>
+
+      <div class="link-content">
+        <h3 class="link-title">Exclusive Content</h3>
+        <p class="link-blurb">
+          Your gateway to premium Doja Spice content — updated daily.
+        </p>
+
+        <a href="https://linktr.ee/doja.spice" target="_blank" class="link-button">
+          Explore More
+        </a>
+      </div>
+    </div>
+    <!-- END BLOCK -->
+
   </div>
 
   <footer>© 2025 Doja Spice</footer>
