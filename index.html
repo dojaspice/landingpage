@@ -63,6 +63,13 @@
       }
     }
 
+    @media (max-width: 480px) {
+    .link-section {
+    padding: 1.2rem 1.4rem; /* extra mobile safe padding */
+      }
+    }
+
+
     html, body {
       margin: 0;
       padding: 0;
@@ -163,7 +170,7 @@
       flex-direction: column;
       gap: 16px;
       text-align: center;
-      padding: 1rem;
+      padding: 1.2rem;
     }
 
     .link-banner {
@@ -171,14 +178,14 @@
       width: 100%;
       overflow: hidden;
       border-radius: 16px;
+      padding: 0 1rem; /* moved from image to container */
     }
 
     .link-banner img {
       width: 100%;
-      max-width: 500px;        /* keeps it from getting too large */
+      /*max-width: 500px;        /* keeps it from getting too large */
       margin: 0 auto;          /* centers it */
       display: block;          
-      padding: 0 1rem;         /* adds padding left & right */
       object-fit: contain;     /* prevents cropping */
       -webkit-mask-image: linear-gradient(
         to bottom,
