@@ -186,6 +186,8 @@
       width: 100%;
       overflow: hidden;
       border-radius: 16px;
+      margin: 0 1rem; /* NEW: spacing outside, not internal padding */
+      padding: 0;     /* ensure no internal padding */
     }
 
     .link-banner img {
@@ -194,8 +196,8 @@
       display: block;
       object-fit: cover; 
       box-sizing: border-box;
-      padding-right: 1rem; /* forces spacing on the right side *//* fill container properly */
-      border-radius: 16px;
+      padding-right: 0.8rem; /* forces spacing on the right side *//* fill container properly */
+      border-radius: inherit;
       -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0));
       -webkit-mask-size: 100% 100%;
