@@ -56,6 +56,13 @@
       }
     }
 
+    @media (max-width: 480px) {
+    .banner-image {
+    max-width: 90%;
+    padding: 0 1.2rem;
+      }
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -152,10 +159,11 @@
       width: 100%;
       max-width: 500px;
       margin: 24px auto;
-      padding: 0 16px;
       display: flex;
       flex-direction: column;
       gap: 16px;
+      text-align: center;
+      padding: 1rem;
     }
 
     .link-banner {
@@ -167,9 +175,11 @@
 
     .link-banner img {
       width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 16px;
+      max-width: 500px;        /* keeps it from getting too large */
+      margin: 0 auto;          /* centers it */
+      display: block;          
+      padding: 0 1rem;         /* adds padding left & right */
+      object-fit: contain;     /* prevents cropping */
       -webkit-mask-image: linear-gradient(
         to bottom,
         rgba(0,0,0,1),
