@@ -181,32 +181,30 @@
       box-sizing: border-box;
     }
 
+    /* CLEAN + FIXED BANNER SECTION */
     .link-banner {
-      position: relative;
       width: 100%;
-      overflow: hidden;
-      border-radius: 16px;
-      margin: 0 1rem; /* NEW: spacing outside, not internal padding */
-      padding: 0;     /* ensure no internal padding */
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 18px;
+      overflow: hidden;   /* Ensures rounded corners apply fully */
+      position: relative;
     }
-
+    
+    /* Banner Image */
     .link-banner img {
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover; 
-      box-sizing: border-box;
-      padding-right: 1rem; /* forces spacing on the right side *//* fill container properly */
       border-radius: inherit;
-      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0));
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6), rgba(0,0,0,0));
-      -webkit-mask-size: 100% 100%;
-      mask-size: 100% 100%;
+    
+      /* OPTIONAL FADE — remove these 4 lines if you want no gradient */
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
       -webkit-mask-repeat: no-repeat;
       mask-repeat: no-repeat;
-      -webkit-mask-border-radius: 16px; /* 🟣 THIS FIXES YOUR ISSUE */
-      mask-border-radius: 16px;         /* 🟣 THIS FIXES YOUR ISSUE */
     }
+
 
     .link-content {
       text-align: center;
