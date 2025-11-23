@@ -162,6 +162,13 @@
 
         /* --- NEW LINK SECTION COMPONENT --- */
 
+    /* Apply universal box sizing (major layout improvement) */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     .link-section {
       width: 100%;
       max-width: 500px;
@@ -170,7 +177,8 @@
       flex-direction: column;
       gap: 16px;
       text-align: center;
-      padding: 1.2rem;
+      padding: 1.2rem 1.2rem 2rem 1.2rem; /* top right bottom left */
+      box-sizing: border-box;
     }
 
     .link-banner {
@@ -184,7 +192,9 @@
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover;   /* fill container properly */
+      object-fit: cover; 
+      box-sizing: border-box;
+      padding-right: 1rem; /* forces spacing on the right side *//* fill container properly */
       -webkit-mask-image: linear-gradient(
         to bottom,
         rgba(0,0,0,1),
