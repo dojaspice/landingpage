@@ -268,6 +268,54 @@
       box-shadow: 0 3px 10px rgba(168, 0, 109, 0.40);
     }
 
+    /* ✨ SECTION DIVIDER — glowing white line */
+    .section-divider {
+      width: 80%;
+      max-width: 500px;
+      height: 2px;
+      margin: 60px auto 40px;
+      background: rgba(255, 255, 255, 0.65);
+      box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 220, 200, 0.45);
+      border-radius: 999px;
+    }
+    
+    /* ✨ ABOUT SECTION */
+    .about-section {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 80px;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+    
+    .about-header {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.2rem;
+    
+      text-shadow:
+        0 0 6px rgba(255, 240, 220, 0.65),
+        0 0 14px rgba(255, 230, 200, 0.45);
+    }
+    
+    .about-text {
+      font-size: 1.05rem;
+      line-height: 1.6rem;
+      opacity: 0.92;
+      color: #ffffff;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+    }
+    
+    /* reuses your glass button but increases spacing for this section */
+    .about-button {
+      margin-top: 1.4rem;
+    }
+
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -311,6 +359,33 @@
     <!-- END BLOCK -->
 
   </div>
+
+  <!-- ✨ SECTION DIVIDER ✨ -->
+<div class="section-divider"></div>
+
+<!-- ✨ ABOUT SECTION ✨ -->
+<section class="about-section">
+  <h2 class="about-header">About Doja</h2>
+
+  <p class="about-text">
+    Doja Spice is a rising name in modern fashion culture — a digital muse shaped
+    by creativity, style, and the ever-moving pulse of technology. Blending
+    timeless beauty with cutting-edge design, she represents a new era of modeling
+    where imagination and innovation walk side by side.<br><br>
+    Inspired by high fashion, soft aesthetics, and the expressive energy of online
+    culture, Doja brings a fresh perspective to every look. Her world is built on
+    color, movement, and emotion: bold silhouettes, dreamy palettes, and a playful
+    confidence that invites others to explore their own style.<br><br>
+    Evolving with every collaboration and new visual world she steps into, Doja
+    reflects the limitless potential of a model who continues to grow with
+    technology — yet expresses herself with warmth, personality, and emotion.
+  </p>
+
+  <a href="https://linktr.ee/doja.spice" target="_blank" class="link-button about-button">
+    Explore More
+  </a>
+</section>
+
 
   <footer>© 2025 Doja Spice</footer>
 </body>
